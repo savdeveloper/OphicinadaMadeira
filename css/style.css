@@ -439,6 +439,18 @@ img { max-width: 100%; height: auto; display: block; }
   padding-top: 1.2rem;
   font-size: 0.9rem;
   color: rgba(245,237,225,.7);
+  text-align: center;
+  line-height: 1.7;
+}
+.rodape__legal .credito-dev {
+  color: var(--dourado-claro);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color .2s ease;
+}
+.rodape__legal .credito-dev:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 /* ===== Botão flutuante WhatsApp ===== */
