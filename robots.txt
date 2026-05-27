@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /.wrangler/
+Disallow: /backup/
+
+Sitemap: https://ophicinadamadeira.com/sitemap.xml

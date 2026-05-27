@@ -8,3 +8,7 @@ node_modules
 node_modules/**
 *.md
 .DS_Store
+Thumbs.db
+img/logo/favicon-source.png
+scripts
+scripts/**

@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#2a1a10" />
+  <meta name="theme-color" content="#2a1a10" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0a0703" media="(prefers-color-scheme: dark)" />
+  <meta name="color-scheme" content="light dark" />
+
   <title>Contato — Ophicina da Madeira</title>
   <meta name="description" content="Fale conosco pelo WhatsApp (15) 99241-8743. Atendemos em Boituva-SP e entregamos para todo o estado de São Paulo." />
+
+  <link rel="canonical" href="https://ophicinadamadeira.com/contato.html" />
 
   <link rel="icon" href="img/logo/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon-32.png" />
@@ -15,23 +20,107 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..900,0..100,0..1;1,9..144,300..900,0..100,0..1&family=Source+Sans+3:wght@400;600;700&display=swap" />
 
   <link rel="stylesheet" href="css/style.css" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('ophicina-tema');
+        if (t === 'claro' || t === 'noturno') document.documentElement.setAttribute('data-tema', t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ophicinadamadeira.com/contato.html" />
+  <meta property="og:title" content="Contato — Ophicina da Madeira" />
+  <meta property="og:description" content="Fale conosco pelo WhatsApp. Atendemos em Boituva-SP e entregamos para todo o estado." />
+  <meta property="og:image" content="https://ophicinadamadeira.com/img/logo/logo-principal.webp" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://ophicinadamadeira.com/img/logo/logo-principal.webp" />
+
+  <!-- JSON-LD: ContactPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contato — Ophicina da Madeira",
+    "url": "https://ophicinadamadeira.com/contato.html",
+    "mainEntity": {
+      "@type": "LocalBusiness",
+      "@id": "https://ophicinadamadeira.com/#org",
+      "name": "Ophicina da Madeira",
+      "telephone": "+5515992418743",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Boituva",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "taxID": "46.242.218/0001-53"
+    }
+  }
+  </script>
 </head>
 <body>
 
+<a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
+
+<!-- SVG sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wpp" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M19.05 4.91A10 10 0 0 0 4.1 18.27L3 22l3.85-1.01a10 10 0 0 0 14.94-8.7 10 10 0 0 0-2.74-7.38ZM12 20.13a8.13 8.13 0 0 1-4.13-1.13l-.3-.18-2.28.6.61-2.22-.2-.32a8.13 8.13 0 1 1 6.3 3.25Zm4.46-6.1c-.24-.12-1.43-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2a7.3 7.3 0 0 1-1.35-1.67c-.14-.24 0-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.13 3.65.58.25 1.03.4 1.38.51.58.18 1.1.16 1.51.1.46-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.15-.06-.1-.22-.16-.46-.28Z"/>
+    </symbol>
+    <symbol id="i-tel" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.58 1 1 0 0 1-.24 1.05Z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2a8 8 0 0 0-8 8c0 5.4 7.05 11.45 7.35 11.7a1 1 0 0 0 1.3 0C13 21.45 20 15.4 20 10a8 8 0 0 0-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+    </symbol>
+    <symbol id="i-relogio" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 11h-3V6h2v5h2Z"/>
+    </symbol>
+    <symbol id="i-fb" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M22 12a10 10 0 1 0-11.56 9.87v-6.98H7.9V12h2.55V9.79c0-2.51 1.49-3.9 3.78-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.98A10 10 0 0 0 22 12Z"/>
+    </symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2.16c3.2 0 3.58 0 4.85.07 1.17.05 1.8.25 2.23.42.56.21.96.47 1.38.89.42.42.68.82.89 1.38.16.43.36 1.06.42 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.06 1.17-.26 1.8-.42 2.23a3.7 3.7 0 0 1-.89 1.38 3.7 3.7 0 0 1-1.38.89c-.43.16-1.06.36-2.23.42-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.06-1.8-.26-2.23-.42a3.7 3.7 0 0 1-1.38-.89 3.7 3.7 0 0 1-.89-1.38c-.16-.43-.36-1.06-.42-2.23-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85c.06-1.17.26-1.8.42-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.43-.16 1.06-.36 2.23-.42 1.27-.07 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.83 5.83 0 0 0-2.13 1.38A5.83 5.83 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.32.81.74 1.5 1.38 2.13a5.83 5.83 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.83 5.83 0 0 0 2.13-1.38 5.83 5.83 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.83 5.83 0 0 0-1.38-2.13A5.83 5.83 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88Z"/>
+    </symbol>
+    <symbol id="i-globo" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M3.9 12a3 3 0 0 1 3-3h4v-2h-4a5 5 0 0 0 0 10h4v-2h-4a3 3 0 0 1-3-3Zm6.1 1h4v-2h-4Zm7-6h-4v2h4a3 3 0 0 1 0 6h-4v2h4a5 5 0 0 0 0-10Z"/>
+    </symbol>
+    <symbol id="i-lua" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+    </symbol>
+    <symbol id="i-sol" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+      <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- Header -->
 <header class="cabecalho">
   <div class="cabecalho__inner">
     <a href="index.html" class="marca" aria-label="Ophicina da Madeira — página inicial">
-      <img src="img/logo/logo-quadrada.webp" alt="" class="marca__logo" />
+      <img src="img/logo/logo-quadrada.webp" alt="" class="marca__logo"
+           width="48" height="48" decoding="async" />
       <span class="marca__nome">
-        <strong>Ophicina da Madeira</strong>
-        <small>Madeira de demolição</small>
+        <span class="marca__nome-principal">Ophicina da Madeira</span>
+        <span class="marca__nome-sub">Madeira de demolição</span>
       </span>
     </a>
 
-    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-principal">☰ Menu</button>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="nav-principal">
+      <span class="menu-toggle__icon" aria-hidden="true"><span></span></span>
+      <span>Menu</span>
+    </button>
 
     <nav class="nav" id="nav-principal" aria-label="Navegação principal">
       <ul class="nav__lista">
@@ -40,9 +129,14 @@
         <li><a href="galeria.html">Galeria</a></li>
         <li><a href="contato.html" aria-current="page">Contato</a></li>
         <li>
-          <a class="btn-wpp-mini" href="https://wa.me/5515992418743?text=Ol%C3%A1!%20Vim%20pelo%20site."
-             target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.1 18.27L3 22l3.85-1.01a10 10 0 0 0 14.94-8.7 10 10 0 0 0-2.74-7.38Z"/></svg>
+          <button type="button" class="tema-toggle" data-tema-toggle aria-label="Alternar tema claro/noturno">
+            <svg class="icone-lua" aria-hidden="true"><use href="#i-lua"/></svg>
+            <svg class="icone-sol" aria-hidden="true"><use href="#i-sol"/></svg>
+          </button>
+        </li>
+        <li>
+          <a class="btn-wpp-mini" href="https://wa.me/5515992418743?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener">
+            <svg width="18" height="18" aria-hidden="true"><use href="#i-wpp"/></svg>
             WhatsApp
           </a>
         </li>
@@ -51,21 +145,19 @@
   </div>
 </header>
 
-<main>
+<main id="conteudo" tabindex="-1">
 
-  <section class="secao secao--escura">
-    <div class="container">
-      <div class="divisor"><span>Fale conosco</span></div>
-      <h1 class="titulo-secao" style="color: var(--dourado-claro);">Vamos conversar sobre seu projeto</h1>
-      <p class="subtitulo-secao">
-        A forma mais rápida de atendimento é pelo WhatsApp. Você pode mandar
-        uma foto, uma medida ou só descrever o móvel que tem em mente —
-        respondemos pessoalmente.
+  <section class="secao secao--deep">
+    <div class="container container--narrow">
+      <div class="divisor divisor--centro reveal"><span>Fale conosco</span></div>
+      <h1 class="titulo-secao titulo-secao--dourado reveal">Vamos conversar sobre seu projeto</h1>
+      <p class="subtitulo-secao reveal">
+        A forma mais rápida de atendimento é pelo WhatsApp. Mande uma foto,
+        uma medida ou só descreva o móvel que tem em mente — respondemos pessoalmente.
       </p>
-      <div class="txt-centro">
-        <a class="btn btn--wpp" href="https://wa.me/5515992418743?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Ophicina%20da%20Madeira%20e%20gostaria%20de%20um%20or%C3%A7amento."
-           target="_blank" rel="noopener">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.1 18.27L3 22l3.85-1.01a10 10 0 0 0 14.94-8.7 10 10 0 0 0-2.74-7.38ZM12 20.13a8.13 8.13 0 0 1-4.13-1.13l-.3-.18-2.28.6.61-2.22-.2-.32a8.13 8.13 0 1 1 6.3 3.25Zm4.46-6.1c-.24-.12-1.43-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2a7.3 7.3 0 0 1-1.35-1.67c-.14-.24 0-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.13 3.65.58.25 1.03.4 1.38.51.58.18 1.1.16 1.51.1.46-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg>
+      <div class="txt-centro reveal">
+        <a class="btn btn--wpp" href="https://wa.me/5515992418743?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Ophicina%20da%20Madeira%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">
+          <svg width="22" height="22" aria-hidden="true"><use href="#i-wpp"/></svg>
           Falar no WhatsApp — (15) 99241-8743
         </a>
       </div>
@@ -76,40 +168,32 @@
     <div class="container">
       <div class="contato-grid">
 
-        <div class="contato-bloco">
+        <div class="contato-bloco reveal">
           <h3>Informações de contato</h3>
           <ul>
             <li>
-              <span class="icone" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.91A10 10 0 0 0 4.1 18.27L3 22l3.85-1.01a10 10 0 0 0 14.94-8.7 10 10 0 0 0-2.74-7.38ZM12 20.13a8.13 8.13 0 0 1-4.13-1.13l-.3-.18-2.28.6.61-2.22-.2-.32a8.13 8.13 0 1 1 6.3 3.25Z"/></svg>
-              </span>
+              <span class="icone" aria-hidden="true"><svg width="20" height="20"><use href="#i-wpp"/></svg></span>
               <div>
                 <strong>WhatsApp</strong>
                 <a href="https://wa.me/5515992418743" target="_blank" rel="noopener">+55 (15) 99241-8743</a>
               </div>
             </li>
             <li>
-              <span class="icone" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24 11.36 11.36 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.58 1 1 0 0 1-.24 1.05Z"/></svg>
-              </span>
+              <span class="icone" aria-hidden="true"><svg width="20" height="20"><use href="#i-tel"/></svg></span>
               <div>
                 <strong>Telefone</strong>
                 <a href="tel:+5515992418743">+55 (15) 99241-8743</a>
               </div>
             </li>
             <li>
-              <span class="icone" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a8 8 0 0 0-8 8c0 5.4 7.05 11.45 7.35 11.7a1 1 0 0 0 1.3 0C13 21.45 20 15.4 20 10a8 8 0 0 0-8-8Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/></svg>
-              </span>
+              <span class="icone" aria-hidden="true"><svg width="20" height="20"><use href="#i-pin"/></svg></span>
               <div>
                 <strong>Endereço</strong>
                 Boituva — São Paulo, Brasil
               </div>
             </li>
             <li>
-              <span class="icone" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm1 11h-3V6h2v5h2Z"/></svg>
-              </span>
+              <span class="icone" aria-hidden="true"><svg width="20" height="20"><use href="#i-relogio"/></svg></span>
               <div>
                 <strong>Atendimento</strong>
                 Sempre aberto — atendemos pelo WhatsApp todos os dias
@@ -118,31 +202,25 @@
           </ul>
         </div>
 
-        <div class="contato-bloco">
+        <div class="contato-bloco reveal" style="--reveal-delay:120ms">
           <h3>Redes sociais e site</h3>
           <ul>
             <li>
-              <span class="icone" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.87v-6.98H7.9V12h2.55V9.79c0-2.51 1.49-3.9 3.78-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.77l-.44 2.89h-2.33v6.98A10 10 0 0 0 22 12Z"/></svg>
-              </span>
+              <span class="icone" aria-hidden="true"><svg width="20" height="20"><use href="#i-fb"/></svg></span>
               <div>
                 <strong>Facebook</strong>
                 <a href="https://www.facebook.com/OphicinaDaMadeira/" target="_blank" rel="noopener">facebook.com/OphicinaDaMadeira</a>
               </div>
             </li>
             <li>
-              <span class="icone" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58 0 4.85.07 1.17.05 1.8.25 2.23.42.56.21.96.47 1.38.89.42.42.68.82.89 1.38.16.43.36 1.06.42 2.23.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.06 1.17-.26 1.8-.42 2.23a3.7 3.7 0 0 1-.89 1.38 3.7 3.7 0 0 1-1.38.89c-.43.16-1.06.36-2.23.42-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-1.17-.06-1.8-.26-2.23-.42a3.7 3.7 0 0 1-1.38-.89 3.7 3.7 0 0 1-.89-1.38c-.16-.43-.36-1.06-.42-2.23-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85c.06-1.17.26-1.8.42-2.23.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.43-.16 1.06-.36 2.23-.42 1.27-.07 1.65-.07 4.85-.07ZM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.83 5.83 0 0 0-2.13 1.38A5.83 5.83 0 0 0 .63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.32.81.74 1.5 1.38 2.13a5.83 5.83 0 0 0 2.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.83 5.83 0 0 0 2.13-1.38 5.83 5.83 0 0 0 1.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.83 5.83 0 0 0-1.38-2.13A5.83 5.83 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0Zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.4-11.85a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88Z"/></svg>
-              </span>
+              <span class="icone" aria-hidden="true"><svg width="20" height="20"><use href="#i-ig"/></svg></span>
               <div>
                 <strong>Instagram</strong>
                 <a href="https://www.instagram.com/ophicinadamadeira_" target="_blank" rel="noopener">@ophicinadamadeira_</a>
               </div>
             </li>
             <li>
-              <span class="icone" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.9 12a3 3 0 0 1 3-3h4v-2h-4a5 5 0 0 0 0 10h4v-2h-4a3 3 0 0 1-3-3Zm6.1 1h4v-2h-4Zm7-6h-4v2h4a3 3 0 0 1 0 6h-4v2h4a5 5 0 0 0 0-10Z"/></svg>
-              </span>
+              <span class="icone" aria-hidden="true"><svg width="20" height="20"><use href="#i-globo"/></svg></span>
               <div>
                 <strong>Site</strong>
                 <a href="https://ophicinadamadeira.com" target="_blank" rel="noopener">ophicinadamadeira.com</a>
@@ -155,43 +233,50 @@
     </div>
   </section>
 
-  <section class="secao secao--creme faixa-mapa">
+  <section class="secao secao--creme">
     <div class="container">
-      <div class="divisor"><span>Onde estamos</span></div>
-      <h2 class="titulo-secao">Boituva — São Paulo</h2>
-      <p class="subtitulo-secao">
-        Combine uma visita à oficina pelo WhatsApp. Entregamos para
-        toda a região e demais cidades de São Paulo.
+      <div class="divisor divisor--centro reveal"><span>Onde estamos</span></div>
+      <h2 class="titulo-secao reveal">Boituva — São Paulo</h2>
+      <p class="subtitulo-secao reveal">
+        Combine uma visita à oficina pelo WhatsApp. Entregamos para toda a região
+        e demais cidades de São Paulo.
       </p>
-      <iframe
-        src="https://www.google.com/maps?q=Boituva%2C+SP%2C+Brasil&output=embed"
-        title="Mapa de Boituva, São Paulo"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        allowfullscreen></iframe>
-      <noscript>
-        <div class="mapa-fallback">Estamos em Boituva, São Paulo, Brasil.</div>
-      </noscript>
+
+      <div class="mapa-facade reveal"
+           data-mapa-facade="https://www.google.com/maps?q=Boituva%2C+SP%2C+Brasil&output=embed"
+           data-mapa-titulo="Mapa de Boituva, São Paulo">
+        <noscript>
+          <div class="mapa-fallback">Estamos em Boituva, São Paulo, Brasil.</div>
+        </noscript>
+        <button type="button">Carregar mapa interativo</button>
+      </div>
     </div>
   </section>
 
 </main>
 
 <a class="wpp-flutuante" href="https://wa.me/5515992418743" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
-  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.05 4.91A10 10 0 0 0 4.1 18.27L3 22l3.85-1.01a10 10 0 0 0 14.94-8.7 10 10 0 0 0-2.74-7.38ZM12 20.13a8.13 8.13 0 0 1-4.13-1.13l-.3-.18-2.28.6.61-2.22-.2-.32a8.13 8.13 0 1 1 6.3 3.25Zm4.46-6.1c-.24-.12-1.43-.71-1.66-.79-.22-.08-.38-.12-.54.12-.16.24-.62.79-.76.95-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2a7.3 7.3 0 0 1-1.35-1.67c-.14-.24 0-.36.1-.48.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.4-.54-.4l-.46-.02c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.13 3.65.58.25 1.03.4 1.38.51.58.18 1.1.16 1.51.1.46-.07 1.43-.58 1.63-1.15.2-.56.2-1.04.14-1.15-.06-.1-.22-.16-.46-.28Z"/></svg>
+  <svg aria-hidden="true"><use href="#i-wpp"/></svg>
 </a>
 
 <footer class="rodape">
   <div class="rodape__grid">
     <div>
-      <h4>Ophicina da Madeira</h4>
-      <p>Móveis em madeira de demolição feitos sob medida.<br />Boituva, São Paulo.</p>
+      <div class="rodape__marca">
+        <img src="img/logo/logo-quadrada.webp" alt="" width="44" height="44" loading="lazy" />
+        <span class="rodape__marca-nome">Ophicina da Madeira</span>
+      </div>
+      <p>
+        Móveis em madeira de demolição feitos sob medida.<br />
+        Marcenaria artesanal em Boituva, São Paulo.
+      </p>
     </div>
     <div>
       <h4>Navegação</h4>
       <p>
         <a href="index.html">Início</a><br />
         <a href="index.html#servicos">O que fazemos</a><br />
+        <a href="index.html#processo">Como trabalhamos</a><br />
         <a href="galeria.html">Galeria</a><br />
         <a href="contato.html">Contato</a>
       </p>
@@ -199,8 +284,8 @@
     <div>
       <h4>Contato</h4>
       <p>
-        WhatsApp: <a href="https://wa.me/5515992418743" target="_blank" rel="noopener">(15) 99241-8743</a><br />
-        Atendimento: sempre aberto<br />
+        <a href="https://wa.me/5515992418743" target="_blank" rel="noopener">(15) 99241-8743</a><br />
+        Atendimento todos os dias<br />
         Boituva — SP
       </p>
     </div>
@@ -213,7 +298,9 @@
     </div>
   </div>
   <div class="rodape__legal">
-    © <span data-ano>2026</span> Ophicina da Madeira — Todos os direitos reservados.
+    © <time data-ano datetime="2026">2026</time> Ophicina da Madeira — Todos os direitos reservados.
+    <br />
+    <span class="rodape__cnpj">CNPJ 46.242.218/0001-53</span>
     <br />
     Site feito por <a href="https://www.iamsav.dev" target="_blank" rel="noopener" class="credito-dev">sav.dev</a>
   </div>
